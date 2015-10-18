@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/sketch.css" media="screen" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/sketch.js"></script>
+<style id="dCss"></style>
+</head>
+
+<body>
+<h1>Sketch-a-Sketch</h1>
+
+<p>This is a solution to <a href="http://www.theodinproject.com/web-development-101/javascript-and-jquery">an exercise from The Odin Project</a>.</p>
+
+<form onsubmit="askAndReset(); return false;">
+<p>Give the grid a length and width of <input type="text" name="dimension" id="dimension" size="3"  value="16"> squares. <em>(max = 80)</em></p>
+<p>
+<fieldset>
+    <legend>Brush Type</legend>
+    <input type="radio" name="brush" value="default" checked> Default
+	&nbsp;&nbsp;<input type="radio" name="brush" value="rainbow"> Rainbow
+	&nbsp;&nbsp;<input type="radio" name="brush" value="darken"> Darken
+</fieldset>
+</p>
+<p><input type="submit" value="Reset Grid"></p>
+</form>
+
+<table id="grid">
+</table>
+
+</body>
+</html>
